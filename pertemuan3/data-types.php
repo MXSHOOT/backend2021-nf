@@ -1,10 +1,10 @@
 <?php
 
 # string
-$nama = "Aufa Billah";
+$nama = "Faris Ar Rasyid";
 
 # integer
-$umur = 30;
+$umur = 20;
 
 # float
 $ipk = 3.90;

@@ -1,7 +1,7 @@
 <?php
 
 # array
-$animals = ['Ayam', 'Ikan', 'Kucing'];
+$animals = ['Singa', 'Harimau', 'Kucing'];
 
 # looping foreach
 foreach ($animals as $animal) {

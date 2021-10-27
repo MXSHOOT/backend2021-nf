@@ -43,14 +43,14 @@ class Person
   }
 }
 
-# membuat object aufa dari class Person
-$aufa = new Person("Aufa Billah", "Depok", "Teknik Informatika");
-echo $aufa->getNama() . "<br>";
-echo $aufa->getAlamat() . "<br>";
-echo $aufa->getJurusan() . "<br>";
+# membuat object faris dari class Person
+$faris = new Person("Faris Ar Rasyid", "Jakarta", "Teknik Informatika");
+echo $faris->getNama() . "<br>";
+echo $faris->getAlamat() . "<br>";
+echo $faris->getJurusan() . "<br>";
 
-# membuat object ismail dari class Person
-$ismail = new Person("Ismail Yusuf", "Bekasi", "Sistem Informasi");
-echo $ismail->getNama() . "<br>";
-echo $ismail->getAlamat() . "<br>";
-echo $ismail->getJurusan() . "<br>";
+# membuat object yanto dari class Person
+$yanto = new Person("Yanto", "Depok", "Sistem Informasi");
+echo $yanto->getNama() . "<br>";
+echo $yanto->getAlamat() . "<br>";
+echo $yanto->getJurusan() . "<br>";

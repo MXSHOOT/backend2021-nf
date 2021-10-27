@@ -2,9 +2,9 @@
 
 # membuat array associative
 $user = [
-  'nama' => 'Aufa Billah',
+  'nama' => 'Faris Ar Rasyid',
   'jurusan' => 'Teknik Informatika',
-  'alamat' => 'Depok'
+  'alamat' => 'Jakarta'
 ];
 
 # mengakses array associative

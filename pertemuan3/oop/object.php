@@ -9,16 +9,16 @@ class Person
   public $jurusan;
 }
 
-# membuat object aufa dari class Person
+# membuat object faris dari class Person
 $faris = new Person();
 # mengakses property nama
 echo $faris->nama;
 # memberikan nilai baru ke property nama
-$faris->nama = "Aufa Billah";
+$faris->nama = "Faris Ar Rasyid";
 echo "$faris->nama <br>";
 
-# membuat object ismail dari class Person
-$ismail = new Person();
-echo $ismail->nama;
-$ismail->nama = "Ismail Yusuf";
-echo "$ismail->nama <br>";
+# membuat object yanto dari class Person
+$yanto = new Person();
+echo $yanto->nama;
+$yanto->nama = "Yanto";
+echo "$yanto->nama <br>";

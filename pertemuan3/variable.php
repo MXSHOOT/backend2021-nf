@@ -1,7 +1,7 @@
 <?php
 
 # membuat variable
-$nama = "Aufa Billah";
+$nama = "Faris Ar Rasyid";
 $jurusan = "Teknik Informatika";
 
 # mengakses variable

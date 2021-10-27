@@ -1,7 +1,7 @@
 <?php
 
 # membuat array
-$animals = ['cat', 'dog', 'fish'];
+$animals = ['beruang', 'singa', 'kuda'];
 
 # mengakses elemen array
 echo "$animals[0] <br>";

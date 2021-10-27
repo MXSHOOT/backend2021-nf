@@ -35,20 +35,20 @@ class Person
   }
 }
 
-# membuat object aufa dari class Person
-$aufa = new Person();
-$aufa->setNama("Aufa Billah");
-echo $aufa->getNama() . "<br>";
-$aufa->setAlamat(("Depok"));
-echo $aufa->getAlamat() . "<br>";
-$aufa->setJurusan("Teknik Informatika");
-echo $aufa->getJurusan() . "<br>";
+# membuat object Faris dari class Person
+$faris = new Person();
+$faris->setNama("Faris Ar Rasyid");
+echo $faris->getNama() . "<br>";
+$faris->setAlamat(("Jakarta"));
+echo $faris->getAlamat() . "<br>";
+$faris->setJurusan("Teknik Informatika");
+echo $faris->getJurusan() . "<br>";
 
-# membuat object ismail dari class Person
-$ismail = new Person();
-$ismail->setNama("Ismail Yusuf");
-echo $ismail->getNama() . "<br>";
-$ismail->setAlamat("Bekasi");
-echo $ismail->getAlamat() . "<br>";
-$ismail->setJurusan("Sistem Informasi");
-echo $ismail->getJurusan() . "<br>";
+# membuat object yanto dari class Person
+$yanto = new Person();
+$yanto->setNama("Yanto");
+echo $yanto->getNama() . "<br>";
+$yanto->setAlamat("Depok");
+echo $yanto->getAlamat() . "<br>";
+$yanto->setJurusan("Sistem Informasi");
+echo $yanto->getJurusan() . "<br>";
