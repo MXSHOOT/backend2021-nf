@@ -5,23 +5,30 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Patients;
 
+#200 artinya permintaan browser sukses
+#201 artinya telah memenuhi
+#404 artinya gagal atau tidak ada datanya
+
 class PatientsController extends Controller
 {
+    #Get-Index
     function index()
     {
         $patients = Patients::all();
+        # Degan menggunakan (Model)::all akan tampil semua isi data nya
 
         $data = [
             'message' => 'Get all Patients',
             'data' => $patients
         ];
 
-        return response()->json($data, 200);
+        return response()->json($data, 200); #akan memberitahukan bahwa sukses
     }
 
+    #Post-Store
     function store(Request $request)
     {   
-        $patients = Patients::create([
+        $patients = Patients::create([ #akan membuat dari tiap kolom didalam tabel Patients
             'nama' =>$request->nama,
             'phone' =>$request->phone,
             'address' => $request->address,
@@ -38,8 +45,11 @@ class PatientsController extends Controller
 
         return response()->json($data, 201);
     }
+
+    #Get-Show
     function show($id){
-        $patients = Patients::find($id);
+        $patients = Patients::find($id); 
+        #hampir sama seperti index, hanya saja find akan menampilkan sesuai id yang dimana tidak semua id yang ditampilkan
 
         if ($patients) {
             $data = [
@@ -47,7 +57,7 @@ class PatientsController extends Controller
                 'data' => $patients  
             ];
 
-            return response()->json($data, 200); #200 menanda artinya ok atau berhasil datanya
+            return response()->json($data, 200); 
         } else {
             $data = [
                 'message' => "Data not foun"
@@ -55,16 +65,15 @@ class PatientsController extends Controller
 
             return response()->json($data, 404);
         }
-
-        
-
-        
     }
-    function update(Request $request, $id){
-        $patients = Patients::find($id);
+
+
+    #Put-Update
+    function update(Request $request, $id){ #Request atau meminta ke id
+        $patients = Patients::find($id); #dan mencari atau id yang akan diubah
 
         if ($patients){ 
-            $patients->update([
+            $patients->update([ #ini adalah cara satu" untuk mengupdate dengan menaruh setiap kolomnya
                 'nama' =>$request->nama ?? $patients->nama,
                 'phone' =>$request->phone ?? $patients->phone,
                 'address' =>$request->address ?? $patients->address,
@@ -86,8 +95,9 @@ class PatientsController extends Controller
             return response()->json($data, 404);
         }
     }
-    function destroy($id){
-        $patients = Patients::find($id);
+    #Delete-Destroy
+    function destroy($id){ #destroy ini digunakan untuk menghapus data
+        $patients = Patients::find($id); #dan find ini untuk mencari id atau data mana yang mau dihapus
 
         if ($patients){
             $patients->delete();
